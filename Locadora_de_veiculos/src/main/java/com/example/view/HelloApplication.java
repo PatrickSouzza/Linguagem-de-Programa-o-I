@@ -16,7 +16,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene((Parent) fxmlLoader.load(), 600, 400);
         stage.setTitle("Locadora de Carro");
         stage.setScene(scene);
-        stage.getIcons().add(new Image("icon.png"));
+        stage.getIcons().add(new Image("https://raw.githubusercontent.com/PatrickSouzza/Linguagem-de-Programacao-I/main/Locadora_de_veiculos/src/main/java/com/example/view/icon.png"));
         stage.setResizable(false);
         stage.show();
     }
