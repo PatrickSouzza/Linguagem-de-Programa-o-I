@@ -1,17 +1,18 @@
 # Repositório de Linguagem de Programação
 
-## Tela Cadastro Carro
-
-![Captura de tela 2022-05-11 234342](https://user-images.githubusercontent.com/89882058/167982056-bbbab7d1-1d50-4763-9efd-ac2d627daf5b.png)
-
-
 ## Tela Cadastro Cliente
-![Captura de tela 2022-05-11 234411](https://user-images.githubusercontent.com/89882058/167982176-3869dad0-0c26-4f89-a926-c45f95278683.png)
+
+![1](https://user-images.githubusercontent.com/89882058/174508585-57dc756c-e8b9-4b0d-ab21-491035a9f81e.png)
+
+![2](https://user-images.githubusercontent.com/89882058/174508610-6280ba8f-6589-4996-ab53-83f1d4f51c69.png)
+
+## Tela Cadastro Carro
+![3](https://user-images.githubusercontent.com/89882058/174508631-f88a09e3-e321-4a01-98d8-564155acfdab.png)
+
+![4](https://user-images.githubusercontent.com/89882058/174508642-550d93f6-9e12-4872-ab2d-a626259158e5.png)
 
 ## Tela Cadastro Funcionário
-![Captura de tela 2022-05-11 234449](https://user-images.githubusercontent.com/89882058/167982249-0ef579d6-c287-4ef5-9543-68ac69cbdd9c.png)
+![5](https://user-images.githubusercontent.com/89882058/174508648-8967615a-7b6b-477f-bca5-45086a1912ea.png)
 
-## Exemplo Cadastro
-![carrocadastro](https://user-images.githubusercontent.com/89882058/167982295-a4b00fc3-b22c-4097-9e83-1773b97afad0.png)
-### Pop-up de confirmação de cadastro
-![popup](https://user-images.githubusercontent.com/89882058/167982308-16ee1a6f-92d0-4f4c-88b9-1847d01c9b98.png)
+![6](https://user-images.githubusercontent.com/89882058/174508655-b68a7d98-6021-4ef6-bf6b-7d36a40cf464.png)
+
