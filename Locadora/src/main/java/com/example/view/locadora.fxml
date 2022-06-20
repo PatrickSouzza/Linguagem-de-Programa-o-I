@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="geral1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.view.locadoraController">
+   <children>
+      <TabPane layoutX="14.0" layoutY="52.0" prefHeight="281.0" prefWidth="650.0" stylesheets="@Styles.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0">
+        <tabs>
+            <Tab fx:id="tabCliente" style="-fx-base: #21252a;" text="Cliente">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="318.0" prefWidth="650.0" style="-fx-background-color: #21242a;">
+                     <children>
+                        <TextField fx:id="txt_cliente_cpf" layoutX="112.0" layoutY="60.0" style="-fx-background-color: #21252a; -fx-border-color: #7a7a7a; -fx-border-radius: 5; -fx-text-fill: white;" />
+                        <TextField fx:id="txt_cliente_nome" layoutX="112.0" layoutY="26.0" style="-fx-background-color: #21252a; -fx-border-color: #7a7a7a; -fx-text-fill: white; -fx-border-radius: 5;" />
+                        <TableView fx:id="tableview_cliente" layoutX="20.0" layoutY="96.0" prefHeight="149.0" prefWidth="600.0" style="-fx-base: #21252a; -fx-border-radius: 5;">
+                          <columns>
+                            <TableColumn fx:id="col_cliente_id" prefWidth="47.0" text="ID" />
+                            <TableColumn fx:id="col_cliente_nome" prefWidth="184.0" text="Nome" />
+                              <TableColumn fx:id="col_cliente_cpf" minWidth="0.0" prefWidth="116.0" text="CPF" />
+                              <TableColumn fx:id="col_cliente_email" minWidth="0.0" prefWidth="117.0" text="Email" />
+                              <TableColumn fx:id="col_cliente_telefone" minWidth="0.0" prefWidth="134.0" text="Telefone" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="52.0" layoutY="30.0" text="Nome:" textFill="WHITE" AnchorPane.leftAnchor="52.0" />
+                        <Label layoutX="52.0" layoutY="64.0" text="CPF:" textFill="WHITE" AnchorPane.leftAnchor="52.0" />
+                        <Label layoutX="52.0" layoutY="30.0" prefHeight="17.0" prefWidth="39.0" text="Email:" textFill="WHITE" AnchorPane.leftAnchor="361.0" AnchorPane.rightAnchor="250.0" />
+                        <Label layoutX="361.0" layoutY="64.0" prefHeight="17.0" prefWidth="49.0" text="Telefone:" textFill="WHITE" AnchorPane.leftAnchor="361.0" AnchorPane.rightAnchor="240.0" />
+                        <TextField fx:id="txt_cliente_email" layoutX="421.0" layoutY="26.0" style="-fx-border-color: #7a7a7a; -fx-border-radius: 5; -fx-background-color: #21252a; -fx-text-fill: white;" AnchorPane.rightAnchor="78.0" />
+                        <TextField fx:id="txt_cliente_telefone" layoutX="421.0" layoutY="60.0" style="-fx-background-color: #21252a; -fx-border-color: #7a7a7a; -fx-border-radius: 5; -fx-text-fill: white;" AnchorPane.rightAnchor="78.0" />
+                        <Button layoutX="-10.0" layoutY="256.0" mnemonicParsing="false" onAction="#btn_cliente_cadastrar" prefHeight="63.0" prefWidth="671.0" style="-fx-base: #21252a;" text="Cadastrar" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Button layoutX="157.0" layoutY="195.0" mnemonicParsing="false" onAction="#btn_cliente_pesquisar" style="-fx-background-color: #3185c1;" text="Pesquisar" textFill="WHITE" visible="false" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tab_carro" style="-fx-base: #21252a;" text="Carro">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #21242a;">
+                     <children>
+                        <TextField fx:id="txt_carro_marca" layoutX="112.0" layoutY="60.0" style="-fx-background-color: #21252a; -fx-border-color: #7a7a7a; -fx-border-radius: 5; -fx-text-fill: white;" />
+                        <TextField fx:id="txt_carro_placa" layoutX="112.0" layoutY="26.0" style="-fx-background-color: #21252a; -fx-border-color: #7a7a7a; -fx-border-radius: 5; -fx-text-fill: white;" />
+                        <TableView fx:id="tableview_carro" layoutX="20.0" layoutY="96.0" prefHeight="149.0" prefWidth="600.0" style="-fx-base: #21252a; -fx-border-radius: 5;">
+                           <columns>
+                              <TableColumn fx:id="col_carro_id" prefWidth="48.0" text="ID" />
+                              <TableColumn fx:id="col_carro_placa" prefWidth="141.0" text="Placa" />
+                              <TableColumn fx:id="col_carro_marca" prefWidth="118.0" text="Marca" />
+                              <TableColumn fx:id="col_carro_cor" prefWidth="130.0" text="Cor" />
+                              <TableColumn fx:id="col_carro_modelo" prefWidth="159.0" text="Modelo" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="52.0" layoutY="30.0" text="Placa:" textFill="WHITE" />
+                        <Label layoutX="52.0" layoutY="62.0" text="Marca:" textFill="WHITE" />
+                        <Label layoutX="378.0" layoutY="31.0" prefHeight="17.0" prefWidth="39.0" text="Cor:" textFill="WHITE" AnchorPane.leftAnchor="378.0" AnchorPane.rightAnchor="233.0" />
+                        <Label layoutX="374.0" layoutY="64.0" prefHeight="17.0" prefWidth="46.0" text="Modelo:" textFill="WHITE" AnchorPane.leftAnchor="374.0" AnchorPane.rightAnchor="230.0" />
+                        <TextField fx:id="txt_carro_cor" layoutX="421.0" layoutY="26.0" style="-fx-background-color: #21252a; -fx-border-color: #7a7a7a; -fx-border-radius: 5; -fx-text-fill: white;" />
+                        <TextField fx:id="txt_carro_modelo" layoutX="421.0" layoutY="60.0" style="-fx-background-color: #21252a; -fx-border-color: #7a7a7a; -fx-border-radius: 5; -fx-text-fill: white;" />
+                        <Button layoutX="-10.0" layoutY="256.0" mnemonicParsing="false" onAction="#btn_carro_cadastrar" prefHeight="63.0" prefWidth="671.0" style="-fx-base: #21252a;" text="Cadastrar" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Button layoutX="157.0" layoutY="195.0" mnemonicParsing="false" onAction="#btn_carro_pesquisar" style="-fx-background-color: #3185c1;" text="Pesquisar" textFill="WHITE" visible="false" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabFunc" style="-fx-base: #21252a;" text="Funcionário">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #21242a;">
+                     <children>
+                        <TextField fx:id="txt_func_cpf" layoutX="112.0" layoutY="60.0" style="-fx-background-color: #21252a; -fx-border-color: #7c7c7c; -fx-border-radius: 5; -fx-text-fill: white;" />
+                        <TextField fx:id="txt_func_nome" layoutX="112.0" layoutY="26.0" style="-fx-background-color: #21252a; -fx-border-color: #7c7c7c; -fx-border-radius: 5; -fx-text-fill: white;" />
+                        <TableView fx:id="tableviewFunc" layoutX="20.0" layoutY="96.0" prefHeight="149.0" prefWidth="600.0" style="-fx-base: #21252a; -fx-border-radius: 5;">
+                           <columns>
+                              <TableColumn fx:id="col_func_id" prefWidth="48.0" text="ID" />
+                              <TableColumn fx:id="col_func_nome" prefWidth="173.0" text="Nome" />
+                              <TableColumn fx:id="col_func_cpf" prefWidth="127.0" text="CPF" />
+                              <TableColumn fx:id="col_func_funcao" prefWidth="98.0" text="Função" />
+                              <TableColumn fx:id="col_func_salario" prefWidth="152.0" text="Salário" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="40.0" layoutY="28.0" text="Nome:" textFill="WHITE" AnchorPane.leftAnchor="40.0" />
+                        <Label layoutX="40.0" layoutY="62.0" text="CPF:" textFill="WHITE" AnchorPane.leftAnchor="40.0" />
+                        <Label layoutX="376.0" layoutY="31.0" text="Função:" textFill="WHITE" AnchorPane.leftAnchor="376.0" />
+                        <Label layoutX="377.0" layoutY="65.0" text="Salário:" textFill="WHITE" AnchorPane.leftAnchor="377.0" />
+                        <TextField fx:id="txt_func_funcao" layoutX="421.0" layoutY="26.0" style="-fx-background-color: #21252a; -fx-border-color: #7c7c7c; -fx-border-radius: 5; -fx-text-fill: white;" />
+                        <TextField fx:id="txt_func_salario" layoutX="421.0" layoutY="60.0" style="-fx-background-color: #21252a; -fx-border-color: #7c7c7c; -fx-border-radius: 5; -fx-text-fill: white;" />
+                        <Button layoutX="-10.0" layoutY="256.0" mnemonicParsing="false" onAction="#btn_func_cadastrar" prefHeight="63.0" prefWidth="671.0" style="-fx-base: #21252a;" text="Cadastrar" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Button layoutX="157.0" layoutY="195.0" mnemonicParsing="false" onAction="#btn_func_pesquisar" style="-fx-background-color: #3185c1;" text="Pesquisar" textFill="WHITE" visible="false" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="14.0" layoutY="6.0" text="Katchau" textFill="#ffe800">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="49.0" fitWidth="39.0" layoutX="163.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagem-Raio-PNG.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
